@@ -1,0 +1,38 @@
+.c-menu {
+  margin-bottom: 0;
+  list-style-type: none;
+  padding: var(--size-x1) 0;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--background);
+}
+
+.c-menu__item {
+  --interactive: var(--primary);
+  padding: var(--size-x2) var(--size-x3);
+  display: inline-flex;
+  width: 100%;
+  cursor: pointer;
+}
+
+.c-menu__item:hover,
+.c-menu__item:focus {
+  background-color: var(--interactive);
+}
+
+.c-menu__item:hover .c-text,
+.c-menu__item:focus .c-text {
+  color: var(--text-inverse);
+}
+
+.c-menu__item--is-danger {
+  --interactive: var(--error-color);
+}
+
+.c-menu__divider {
+  margin: var(--size-x1) 0;
+  height: 0.0625rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}

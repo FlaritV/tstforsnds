@@ -1,0 +1,5 @@
+.c-brand {
+  display: inline-flex;
+  color: var(--brand-color);
+  font-size: var(--fz-600);
+}

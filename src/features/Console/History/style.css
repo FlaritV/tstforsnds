@@ -1,0 +1,54 @@
+.requests-history {
+  background-color: var(--secondary-background);
+  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.2);
+}
+
+.requests-history-item {
+  margin-right: var(--size-x2);
+  overflow: hidden;
+}
+
+.request-history-item__status {
+  margin-right: var(--size-x1);
+}
+
+.request-history-item__actions {
+  padding: 0.1875rem;
+}
+
+.request-history-item__name {
+  display: inline-block;
+  position: relative;
+}
+
+.requests-history-item--is-active {
+  outline: none;
+  box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.requests-history-item--is-last {
+  margin-right: 0;
+}
+
+.request-history-item__name--copied:after {
+  content: 'Скопировано';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index-base);
+  height: 100%;
+  padding: 0 var(--size-x1);
+  text-align: left;
+  font-size: var(--fz-200);
+  background-color: var(--secondary-background);
+  border-radius: var(--bdr);
+  animation: slideOut 1s 0.5s forwards;
+  opacity: 1;
+}
+
+@keyframes slideOut {
+  100% {
+    transform: translateY(-1.25rem);
+    opacity: 0;
+  }
+}

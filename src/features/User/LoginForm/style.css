@@ -1,0 +1,32 @@
+.login-form {
+  background-color: var(--background);
+  padding: var(--size-x8) var(--size-x6);
+  max-width: 32.5rem;
+  width: 100%;
+  position: relative;
+  margin: 4rem 0;
+}
+
+.login-form__field {
+  width: 100%;
+}
+
+.login-form__prefix {
+  position: absolute;
+  bottom: calc(100% + 1.25rem);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--fz-600);
+}
+
+.login-form__suffix {
+  position: absolute;
+  top: calc(100% + 1.25rem);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--fz-600);
+}
+
+.login-from__alert {
+  margin-bottom: var(--size-x4);
+}

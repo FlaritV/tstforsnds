@@ -1,0 +1,94 @@
+:root {
+  /* Sizes */
+  --size-atom: 0.3125rem;
+
+  --size-x1: var(--size-atom);
+  --size-x2: calc(var(--size-atom) * 2);
+  --size-x3: calc(var(--size-atom) * 3);
+  --size-x4: calc(var(--size-atom) * 4);
+  --size-x5: calc(var(--size-atom) * 5);
+  --size-x6: calc(var(--size-atom) * 6);
+  --size-x7: calc(var(--size-atom) * 7);
+  --size-x8: calc(var(--size-atom) * 8);
+  --size-x9: calc(var(--size-atom) * 9);
+
+  --min-app-size: 48.75rem;
+
+  /* Font Sizes */
+  --fz-800: 1.5rem;
+  --fz-600: 1.25rem;
+  --fz-500: 1.125rem;
+  --fz-400: 1rem;
+  --fz-300: 0.875rem;
+  --fz-200: 0.75rem;
+
+  /* Text Colors */
+  --text: #0d0d0d;
+  --text-mute: #999999;
+  --text-error-mute: #e48b73;
+  --text-inverse: #fff;
+
+  /* Box Shadow */
+  --shadow-outline: 0 0 0 0.125rem rgba(69, 165, 255, 0.5);
+
+  /* Background Colors */
+  --background: #fff;
+  --secondary-background: #f6f6f6;
+  --error-background: rgba(207, 44, 0, 0.1);
+  --input-background: var(--background);
+
+  /* Colors */
+  --primary: #0055fb;
+  --error-color: #cf2c00;
+  --success-color: #30b800;
+  --brand-color: #c4c4c4; /* :)*/
+  --border-color: #c4c4c4;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(180deg, #45a6ff 0%, #0055fb 100%),
+    var(--brand-color);
+  --gradient-lighten: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.15)
+    ),
+    var(--gradient-primary);
+  --gradient-darken: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15)
+    ),
+    var(--gradient-primary);
+  --gradient-disable: linear-gradient(
+      0deg,
+      var(--brand-color),
+      var(--brand-color)
+    ),
+    var(--gradient-primary);
+  --framing-gradient: linear-gradient(
+    269.98deg,
+    #f6f6f6 0%,
+    rgba(246, 246, 246, 0) 99.93%
+  );
+
+  /* Border Radius */
+  --bdr: 0.3125rem;
+
+  /* zIndex */
+  --z-index-base: 10;
+  --z-index-loader: 100;
+}
+
+.dark-theme {
+  --text: #fff;
+  --background: #2f2f2f;
+  --secondary-background: #171717;
+  --border-color: #2f2f2f;
+  --framing-gradient: linear-gradient(
+    269.98deg,
+    #090909 0%,
+    rgba(246, 246, 246, 0) 99.93%
+  );
+  --input-background: #4f4f4f;
+  --error-background: #1d1d1d;
+}

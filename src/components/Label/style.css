@@ -1,0 +1,13 @@
+.c-label {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--size-x4);
+}
+
+.c-label__title {
+  margin-bottom: var(--size-x1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

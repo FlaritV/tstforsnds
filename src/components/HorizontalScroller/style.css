@@ -1,0 +1,40 @@
+.c-horizontal-scroller {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.c-horizontal-scroller__wrapper {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
+  padding: var(--size-x2) var(--size-x3);
+  padding-right: 0;
+}
+
+/* Disable scrollbar Chrome/Safari/Webkit */
+.c-horizontal-scroller__wrapper::-webkit-scrollbar {
+  height: 0;
+  background: transparent;
+}
+.c-horizontal-scroller__affix {
+  position: relative;
+  background-color: var(--secondary-background);
+  padding: 0.5rem;
+  width: 3.125rem;
+}
+
+.c-horizontal-scroller__affix:before {
+  content: '';
+  background: var(--framing-gradient);
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  height: 100%;
+  width: var(--size-x3);
+  pointer-events: none;
+  border-right: 0.0625rem solid var(--border-color);
+}

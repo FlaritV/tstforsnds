@@ -1,0 +1,23 @@
+.c-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--size-x2) var(--size-x3);
+  padding-right: 0.5rem;
+  background-color: var(--secondary-background);
+  color: var(--text);
+  border-bottom: 0.0625rem solid var(--border-color);
+  height: 3.125rem;
+}
+
+.c-header__logo {
+  margin-right: var(--size-x4);
+}
+.c-header__title {
+  margin-right: auto;
+  font-size: var(--fz-600);
+}
+
+.c-header .user-info {
+  margin-right: 1.0625rem;
+}

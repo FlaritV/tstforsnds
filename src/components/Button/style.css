@@ -1,0 +1,41 @@
+.c-button {
+  background: var(--gradient-primary);
+  border-radius: var(--bdr);
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease-out;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.25em;
+  min-width: 6.875em;
+  padding: 0.625em;
+  color: var(--text-inverse);
+}
+
+.c-button:hover {
+  background: var(--gradient-lighten);
+}
+
+.c-button:focus {
+  box-shadow: var(--shadow-outline);
+  outline: none;
+}
+
+.c-button:active {
+  background: var(--gradient-darken);
+  box-shadow: none;
+}
+
+.c-button:disabled {
+  background: var(--gradient-disable);
+  cursor: initial;
+}
+
+.c-button--is-loading {
+  /* 
+        Text inside button
+        has height 20 
+        but Spin 24
+    */
+  padding: 0.5em 0.625em;
+}

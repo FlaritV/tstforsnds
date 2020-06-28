@@ -1,0 +1,14 @@
+.c-dropdown {
+  box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.25);
+  position: fixed;
+  z-index: 100;
+  visibility: hidden;
+  z-index: -1;
+  user-select: none;
+}
+
+.c-dropdown--is-visible {
+  z-index: 100;
+  visibility: visible;
+  user-select: initial;
+}

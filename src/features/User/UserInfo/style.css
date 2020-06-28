@@ -1,0 +1,12 @@
+.user-info {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text);
+}
+
+.user-info__content {
+  padding: var(--size-x1) var(--size-x3);
+  box-shadow: inset 0 0 0 0.0625rem rgba(0, 0, 0, 0.2);
+  margin-right: var(--size-x6);
+  border-radius: var(--bdr);
+}

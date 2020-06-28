@@ -1,0 +1,17 @@
+.c-badge {
+  --background: var(--secondary-background);
+  height: 0.625em;
+  width: 0.625em;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--background);
+  box-shadow: inset 0 0 0 0.0625rem rgba(0, 0, 0, 0.2);
+}
+
+.c-badge--type--success {
+  --background: var(--success-color);
+}
+
+.c-badge--type--error {
+  --background: var(--error-color);
+}

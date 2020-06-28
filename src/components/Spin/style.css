@@ -1,0 +1,17 @@
+.c-spin {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: top;
+}
+.c-spin--is-global {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--background);
+  color: var(--primary);
+  font-size: var(--fz-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

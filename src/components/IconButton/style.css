@@ -1,0 +1,49 @@
+.c-icon-button {
+  --icon-gutter: 0.5em;
+
+  padding: var(--size-x1);
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--fz-400);
+  color: var(--text);
+  background-color: transparent;
+  border: none;
+  border-radius: var(--bdr);
+  cursor: pointer;
+}
+
+.c-icon-button:hover,
+.c-icon-button:focus {
+  color: var(--primary);
+  outline: none;
+}
+
+.c-icon-button:hover .c-text,
+.c-icon-button:focus .c-text {
+  color: var(--primary);
+  outline: none;
+}
+
+.c-icon-button:focus {
+  box-shadow: inset var(--shadow-outline);
+}
+
+.c-icon-button--placement--right {
+  flex-direction: row-reverse;
+}
+
+.c-icon-button--placement--right .c-icon-button__icon {
+  margin-right: 0;
+  margin-left: var(--icon-gutter);
+}
+
+.c-icon-button--is-single {
+  --icon-gutter: 0;
+}
+
+.c-icon-button__icon {
+  margin-right: var(--icon-gutter);
+
+  width: var(--icon-size, 1.5em);
+  height: var(--icon-size, 1.5em);
+}

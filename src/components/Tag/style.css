@@ -1,0 +1,41 @@
+.c-tag {
+  background-color: var(--background);
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+  border-radius: var(--bdr);
+  cursor: pointer;
+  border: none;
+  position: relative;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c-tag:hover,
+.c-tag:focus {
+  outline: none;
+  box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.c-tag__interactive {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--size-x1);
+  padding-left: var(--size-x2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fz-400);
+}
+
+.c-tag__interactive:focus {
+  outline: none;
+  box-shadow: inset var(--shadow-outline);
+}
+
+.c-tag__affix {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,7 @@
+.c-textarea {
+  max-width: 100%;
+}
+
+.c-textarea--is-code {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}

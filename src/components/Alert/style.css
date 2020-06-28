@@ -1,0 +1,33 @@
+.c-alert {
+  --color: var(--error-color);
+  --background: var(--error-background);
+  padding: var(--size-x2);
+  display: flex;
+  border-radius: var(--bdr);
+
+  color: var(--color);
+  background-color: var(--background);
+}
+
+.c-alert__icon {
+  margin-right: 0.5rem;
+}
+
+.c-alert__title,
+.c-alert__description {
+  display: block;
+  color: inherit;
+}
+
+.c-alert__title {
+  margin-bottom: 0.1875rem;
+}
+
+.c-alert__description {
+  color: var(--text-error-mute);
+}
+
+.c-alert--type--error {
+  --color: var(--error-color);
+  --background: var(--error-background);
+}

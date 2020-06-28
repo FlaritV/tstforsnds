@@ -1,0 +1,20 @@
+.c-resizer {
+  width: var(--size-x2);
+  min-width: var(--size-x2);
+  height: 100%;
+  cursor: e-resize;
+  position: relative;
+  color: rgba(0, 0, 0, 0.2);
+}
+.c-resizer:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.c-resizer__indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size-x5);
+  height: var(--size-x5);
+}

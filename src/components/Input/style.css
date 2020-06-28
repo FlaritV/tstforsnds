@@ -1,0 +1,23 @@
+.c-input {
+  background-color: var(--input-background);
+  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+  border-radius: var(--bdr);
+  font-size: var(--fz-500);
+  line-height: 1.875rem;
+  padding: var(--size-x1) var(--size-x2);
+  color: var(--text);
+}
+
+.c-input:hover {
+  border: 0.0625rem solid rgba(0, 0, 0, 0.4);
+}
+
+.c-input:focus {
+  outline: none;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 0.0625rem rgba(153, 153, 153, 0.5);
+}
+
+.c-input:disabled {
+  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+}

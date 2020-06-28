@@ -1,0 +1,12 @@
+.c-field__input {
+  width: 100%;
+}
+
+.c-field--is-invalid {
+  color: var(--error-color);
+}
+
+.c-field--is-invalid .c-field__input {
+  border-color: var(--error-color);
+  box-shadow: 0 0 0.3125rem rgba(207, 44, 0, 0.5);
+}
